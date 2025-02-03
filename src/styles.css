@@ -1,0 +1,80 @@
+body {
+	margin: 1;
+	background-color: black;
+	font-family: 'Hurmit Nerd Font';
+}
+
+
+.hovered:hover {
+	color: goldenrod;
+	cursor: pointer;
+}
+
+.flex-container {
+	display: flex;
+	margin: 0;
+	color: yellowgreen;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.logo {
+	animation: flip;
+	animation-duration: 3s;
+}
+
+.relogo {
+	animation: flip;
+	animation-duration: 3s;
+}
+
+.reveal1 {
+	color: yellowgreen;
+	animation: reveal;
+	animation-duration: 1s;
+}
+
+.reveal2 {
+	color: yellowgreen;
+	animation: reveal;
+	animation-duration: 1s;
+	animation-delay: .3s;
+}
+
+.reveal3 {
+	color: yellowgreen;
+	animation: reveal;
+	animation-duration: 1s;
+	animation-delay: .5s;
+}
+
+
+@keyframes flip {
+	0% {
+		transform: rotateX(120deg);
+	}
+
+	50% {
+		transform: rotateX(240deg);
+	}
+
+	100% {
+		transform: rotateX(360deg);
+	}
+}
+
+@keyframes reveal {
+	0% {
+		color: black;
+	}
+
+	50% {
+		font-size: 1.5em;
+		color: white;
+	}
+
+	100% {
+		color: yellowgreen;
+	}
+}
