@@ -10,5 +10,8 @@
   "description": "",
   "devDependencies": {
     "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "push-dir": "^0.4.1"
   }
 }
