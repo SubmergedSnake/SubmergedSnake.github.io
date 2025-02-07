@@ -1,0 +1,69 @@
+body {
+  background-color: #000;
+  margin: 1px;
+  font-family: Hurmit Nerd Font;
+  font-size: 45px;
+}
+
+.hovered:hover {
+  color: #daa520;
+  cursor: pointer;
+}
+
+.flex-container {
+  color: #9acd32;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.logo, .relogo {
+  animation: 3s flip;
+}
+
+.reveal1 {
+  color: #9acd32;
+  animation: 1s reveal;
+}
+
+.reveal2 {
+  color: #9acd32;
+  animation: 1s .3s reveal;
+}
+
+.reveal3 {
+  color: #9acd32;
+  animation: 1s .5s reveal;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(120deg);
+  }
+
+  50% {
+    transform: rotateX(240deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    color: #000;
+  }
+
+  50% {
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+  100% {
+    color: #9acd32;
+  }
+}
+/*# sourceMappingURL=index.4d663569.css.map */
